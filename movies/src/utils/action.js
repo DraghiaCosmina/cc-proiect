@@ -7,7 +7,7 @@ export const listMovies = () => async (dispatch) => {
         type: MOVIE_LIST_REQUEST
     })
     try {
-        const { data } = await Axios.get('/movies');
+        const { data } = await Axios.get(`${process.env.REACT_APP_HOST}/movies`);
         dispatch({
             type: MOVIE_LIST_SUCCESS, payload: data
         })
@@ -26,8 +26,8 @@ export const saveMovie = (movieId, movieTitle, moviePathPoster) => async (dispat
 
 
 
-        const { data } = await Axios.post('/movies', { movieId, movieTitle, moviePathPoster })
-
+        const { data } = await Axios.post(`${process.env.REACT_APP_HOST}/movies`, { movieId, movieTitle, moviePathPoster })
+        
         dispatch({ type: MOVIE_SAVE_SUCCESS, payload: data });
 
 
@@ -43,7 +43,7 @@ export const deleteMovie = (movieId) => async (dispatch, getState) => {
     dispatch({ type: MOVIE_DELETE_REQUEST, payload: movieId });
 
     try {
-        await Axios.delete(`/movies/${movieId}`, {
+        await Axios.delete(`${process.env.REACT_APP_HOST}/movies/${movieId}`, {
             movieId
 
         });
