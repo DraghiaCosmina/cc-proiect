@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { saveMovie } from "../utils/action";
-import 'react-toastify/dist/ReactToastify.css'
+
 
 export const MovieResult = ({ movie }) => {
 
