@@ -67,3 +67,6 @@ REFERINTE
 	Link deploy backend: https://mighty-springs-50951.herokuapp.com/movies (nu s-a reușit deploy-ul pentru frontend, se pot vizualiza înregistrarile existente în baza de date la acest URL)
 	Link deploy frontend: https://murmuring-gorge-78410.herokuapp.com/ (nu funcționează) 
 
+![image](https://user-images.githubusercontent.com/72129828/168489249-e46b341f-4344-4209-a9f0-6e2615551736.png)
+![image](https://user-images.githubusercontent.com/72129828/168489258-59dd441a-68b5-4a50-8614-7e7ae4027a7c.png)
+
